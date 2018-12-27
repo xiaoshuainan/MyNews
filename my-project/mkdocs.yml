@@ -1,0 +1,16 @@
+site_name: 资讯接口文档
+nav:
+  - 索引: index.md
+  - 首页: home.md
+  - 视频: video.md
+  - 小视频: huoshan.md
+  - 我的: mine.md
+  - 用户详情: user_detail.md
+  - 微头条: weitoutiao.md
+  - 主体颜色: theme.md
+  - 项目开发:
+    - 项目搭建: 101-项目搭建.md
+    - 补充内容: 102 - 补充内容.md
+    - 我的界面分析: 201 - 我的界面分析.md
+    - Swift 的核心: 202 - Swift 的核心.md
+    - Any 和 AnyObject 的分析: 203 - Any 和 AnyObject 的分析.md
