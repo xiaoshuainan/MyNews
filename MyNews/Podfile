@@ -1,11 +1,25 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'MyNews' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  pod 'Alamofire'
-
-
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    pod 'Alamofire' #网络请求框架,类似OC的AFNetworking
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SGPagingView' #模仿美团、头条顶部切换视图
+    pod 'IBAnimatable'  #动态按钮IB
+    
+    #限定库的swift版本
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            if ['RxCocoa', 'IBAnimatable'].include? target.name
+                target.build_configurations.each do |config|
+                    config.build_settings['SWIFT_VERSION'] = '4.0'
+                end
+            end
+        end
+    end
+    
 end

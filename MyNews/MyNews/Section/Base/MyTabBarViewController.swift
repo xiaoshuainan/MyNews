@@ -21,11 +21,27 @@ class MyTabBarViewController: UITabBarController {
     
     /// 添加子控制器
     private func addChildViewControllers() {
-        setChildViewController(ViewController(), title: "首页", imageName: "home")
+        setChildViewController(HomeViewController(), title: "首页", imageName: "home")
         setChildViewController(ViewController(), title: "西瓜视频", imageName: "video")
-        setChildViewController(ViewController(), title: "", imageName: "redpackage")
-        setChildViewController(ViewController(), title: "微头条", imageName: "weitoutiao")
+        setPublishViewController(ViewController(), title: "", imageName: "feed_publish")
         setChildViewController(ViewController(), title: "小视频", imageName: "huoshan")
+        setChildViewController(ViewController(), title: "我的", imageName: "mine")
+    }
+    
+    /// 初始化发布按钮
+    private func setPublishViewController(_ childController: UIViewController, title: String, imageName: String) {
+        //设置tabBar文字与图片
+        if UserDefaults.standard.bool(forKey: isNight) {
+            //夜间
+            childController.tabBarItem.image = UIImage(named: imageName + "_night_44x44_")
+            childController.tabBarItem.selectedImage = UIImage(named: imageName + "_press_night_44x44_")
+        } else {
+            //日间
+            childController.tabBarItem.image = UIImage(named: imageName + "_44x44_")
+            childController.tabBarItem.selectedImage = UIImage(named: imageName + "_press_44x44_")
+        }
+        childController.title = title
+        addChild(MyNavigationController(rootViewController: childController))
     }
     
     /// 初始化控制器

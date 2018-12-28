@@ -1,16 +1,33 @@
 PODS:
   - Alamofire (4.7.3)
+  - IBAnimatable (5.1.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SGPagingView (1.5.1)
 
 DEPENDENCIES:
   - Alamofire
+  - IBAnimatable
+  - RxCocoa
+  - RxSwift
+  - SGPagingView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - IBAnimatable
+    - RxCocoa
+    - RxSwift
+    - SGPagingView
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SGPagingView: 914ed5743e5a0c81a45d8229bfece2cd5b8cc013
 
-PODFILE CHECKSUM: 0b09f562d809891d7ec2faaff0228b442cf30cda
+PODFILE CHECKSUM: 4d75f176c0f779bffa9175f9dc3c4edc4d153b60
 
 COCOAPODS: 1.5.2
