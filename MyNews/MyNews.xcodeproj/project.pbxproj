@@ -34,13 +34,17 @@
 		1400D00821D22E2B00351731 /* ThemeActivityIndicatorViewStylePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400CFF421D22E2B00351731 /* ThemeActivityIndicatorViewStylePicker.swift */; };
 		1400D00921D22E2B00351731 /* ThemeImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400CFF521D22E2B00351731 /* ThemeImagePicker.swift */; };
 		1400D00A21D22E2B00351731 /* ThemeStatusBarStylePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400CFF621D22E2B00351731 /* ThemeStatusBarStylePicker.swift */; };
+		14203B9321D758BC0065B24D /* HomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14203B9121D758BC0065B24D /* HomeNavigationView.swift */; };
+		14203B9421D758BC0065B24D /* HomeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14203B9221D758BC0065B24D /* HomeNavigationView.xib */; };
+		14203BAF21DCB44E0065B24D /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14203BAE21DCB44E0065B24D /* UIKit+Extension.swift */; };
 		1426ED1B21D630D300E0AC6F /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426ED0A21D630D200E0AC6F /* MyTabBarViewController.swift */; };
 		1426ED1C21D630D300E0AC6F /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426ED0B21D630D200E0AC6F /* MyNavigationController.swift */; };
 		1426ED1D21D630D300E0AC6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426ED1221D630D300E0AC6F /* HomeViewController.swift */; };
-		1426ED1E21D630D300E0AC6F /* HomeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1426ED1521D630D300E0AC6F /* HomeNavigationView.xib */; };
-		1426ED1F21D630D300E0AC6F /* HomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426ED1621D630D300E0AC6F /* HomeNavigationView.swift */; };
 		1426ED2321D6311A00E0AC6F /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1426ED2121D6311A00E0AC6F /* default_theme.plist */; };
 		1426ED2421D6311A00E0AC6F /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1426ED2221D6311A00E0AC6F /* night_theme.plist */; };
+		143DDBE121EDD1020057D858 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDBE021EDD1020057D858 /* HomeTableViewController.swift */; };
+		146034C621DD994200AFFD77 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146034C521DD994200AFFD77 /* NetworkTools.swift */; };
+		146034C821DDA13C00AFFD77 /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146034C721DDA13C00AFFD77 /* HomeNewsTitle.swift */; };
 		148B9BA921D3603700ED0C44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B9BA821D3603700ED0C44 /* Constant.swift */; };
 		148B9BB121D3814300ED0C44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148B9BB021D3814300ED0C44 /* Images.xcassets */; };
 		858757A1093757B840124BD1 /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEBE7BDB4A9928A8B273D38 /* Pods_MyNews.framework */; };
@@ -97,13 +101,17 @@
 		1400CFF421D22E2B00351731 /* ThemeActivityIndicatorViewStylePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeActivityIndicatorViewStylePicker.swift; sourceTree = "<group>"; };
 		1400CFF521D22E2B00351731 /* ThemeImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeImagePicker.swift; sourceTree = "<group>"; };
 		1400CFF621D22E2B00351731 /* ThemeStatusBarStylePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeStatusBarStylePicker.swift; sourceTree = "<group>"; };
+		14203B9121D758BC0065B24D /* HomeNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationView.swift; sourceTree = "<group>"; };
+		14203B9221D758BC0065B24D /* HomeNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavigationView.xib; sourceTree = "<group>"; };
+		14203BAE21DCB44E0065B24D /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
 		1426ED0A21D630D200E0AC6F /* MyTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
 		1426ED0B21D630D200E0AC6F /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		1426ED1221D630D300E0AC6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		1426ED1521D630D300E0AC6F /* HomeNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavigationView.xib; sourceTree = "<group>"; };
-		1426ED1621D630D300E0AC6F /* HomeNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationView.swift; sourceTree = "<group>"; };
 		1426ED2121D6311A00E0AC6F /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		1426ED2221D6311A00E0AC6F /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
+		143DDBE021EDD1020057D858 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		146034C521DD994200AFFD77 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		146034C721DDA13C00AFFD77 /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
 		148B9BA821D3603700ED0C44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		148B9BB021D3814300ED0C44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1C19C0CF7C8376707A585C1F /* Pods-MyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNews/Pods-MyNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +176,7 @@
 				1400CF8A21D226A900351731 /* Assets.xcassets */,
 				1400CF8C21D226A900351731 /* LaunchScreen.storyboard */,
 				1400CF8F21D226A900351731 /* Info.plist */,
+				146034C221DD976300AFFD77 /* Tools */,
 				1400CFB521D2274E00351731 /* Constant */,
 				1400CFCD21D2274E00351731 /* Extension */,
 				1400CFB721D2274E00351731 /* Lib */,
@@ -207,8 +216,8 @@
 		1400CFB221D2274E00351731 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				1426ED0921D630D200E0AC6F /* Base */,
 				1426ED1021D630D300E0AC6F /* Home */,
+				1426ED0921D630D200E0AC6F /* Base */,
 				1426ED0521D630D200E0AC6F /* Mine */,
 				1426ED1721D630D300E0AC6F /* Video */,
 				1426ED0C21D630D200E0AC6F /* VolcanoVideo */,
@@ -236,6 +245,7 @@
 		1400CFCD21D2274E00351731 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				14203BAE21DCB44E0065B24D /* UIKit+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -351,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				1426ED1221D630D300E0AC6F /* HomeViewController.swift */,
+				143DDBE021EDD1020057D858 /* HomeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,6 +369,7 @@
 		1426ED1321D630D300E0AC6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				146034C721DDA13C00AFFD77 /* HomeNewsTitle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,8 +377,8 @@
 		1426ED1421D630D300E0AC6F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1426ED1521D630D300E0AC6F /* HomeNavigationView.xib */,
-				1426ED1621D630D300E0AC6F /* HomeNavigationView.swift */,
+				14203B9121D758BC0065B24D /* HomeNavigationView.swift */,
+				14203B9221D758BC0065B24D /* HomeNavigationView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +421,14 @@
 				1426ED2221D6311A00E0AC6F /* night_theme.plist */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		146034C221DD976300AFFD77 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				146034C521DD994200AFFD77 /* NetworkTools.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		72980A88932969F2928E3CE9 /* Pods */ = {
@@ -535,12 +555,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1426ED2321D6311A00E0AC6F /* default_theme.plist in Resources */,
+				14203B9421D758BC0065B24D /* HomeNavigationView.xib in Resources */,
 				1400CF8E21D226A900351731 /* LaunchScreen.storyboard in Resources */,
 				148B9BB121D3814300ED0C44 /* Images.xcassets in Resources */,
 				1426ED2421D6311A00E0AC6F /* night_theme.plist in Resources */,
 				1400CF8B21D226A900351731 /* Assets.xcassets in Resources */,
 				1400CF8921D226A700351731 /* Main.storyboard in Resources */,
-				1426ED1E21D630D300E0AC6F /* HomeNavigationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,18 +607,30 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -618,7 +650,7 @@
 				1400CFFB21D22E2B00351731 /* ThemeColorPicker.swift in Sources */,
 				1400D00421D22E2B00351731 /* NSObject+Theme.swift in Sources */,
 				1400CFF921D22E2B00351731 /* ThemeStatePicker.swift in Sources */,
-				1426ED1F21D630D300E0AC6F /* HomeNavigationView.swift in Sources */,
+				14203B9321D758BC0065B24D /* HomeNavigationView.swift in Sources */,
 				1400CF8621D226A700351731 /* ViewController.swift in Sources */,
 				1400CFFE21D22E2B00351731 /* ThemeFontPicker.swift in Sources */,
 				1426ED1C21D630D300E0AC6F /* MyNavigationController.swift in Sources */,
@@ -626,11 +658,15 @@
 				1400D00621D22E2B00351731 /* ThemeKeyboardAppearancePicker.swift in Sources */,
 				1426ED1D21D630D300E0AC6F /* HomeViewController.swift in Sources */,
 				1400D00521D22E2B00351731 /* UIKit+Theme.swift in Sources */,
+				14203BAF21DCB44E0065B24D /* UIKit+Extension.swift in Sources */,
 				148B9BA921D3603700ED0C44 /* Constant.swift in Sources */,
 				1400CFFC21D22E2B00351731 /* UIColorExtension.swift in Sources */,
 				1400D00021D22E2B00351731 /* ThemeManager+Index.swift in Sources */,
+				146034C821DDA13C00AFFD77 /* HomeNewsTitle.swift in Sources */,
+				146034C621DD994200AFFD77 /* NetworkTools.swift in Sources */,
 				1400D00121D22E2B00351731 /* ThemePicker.swift in Sources */,
 				1400D00821D22E2B00351731 /* ThemeActivityIndicatorViewStylePicker.swift in Sources */,
+				143DDBE121EDD1020057D858 /* HomeTableViewController.swift in Sources */,
 				1400D00221D22E2B00351731 /* ThemeCGColorPicker.swift in Sources */,
 				1400D00321D22E2B00351731 /* ThemeManager.swift in Sources */,
 				1400CF8421D226A700351731 /* AppDelegate.swift in Sources */,

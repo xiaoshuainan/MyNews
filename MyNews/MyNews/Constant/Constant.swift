@@ -13,6 +13,12 @@ let screenWidth = UIScreen.main.bounds.width
 /// 屏幕的高度
 let screenHeight = UIScreen.main.bounds.height
 
+/// 服务器地址
+let BASE_URL = "https://is.snssdk.com"
+
+let device_id: Int = 6096495334
+let iid: Int = 5034850950
+
 /// 视图的x y w h
 func x(object: UIView) -> CGFloat {
     return object.frame.origin.x
@@ -26,6 +32,10 @@ func w(object: UIView) -> CGFloat {
 func h(object: UIView) -> CGFloat {
     return object.frame.height
 }
+
+/// 添加频道的宽高
+let newsTitleHeight: CGFloat = 40.0
+
 
 /// 夜景
 let isNight = "isNight"

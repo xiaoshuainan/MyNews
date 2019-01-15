@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var bgColor: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = bgColor
     }
 
 

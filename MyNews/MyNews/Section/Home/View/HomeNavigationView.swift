@@ -9,7 +9,7 @@
 import UIKit
 import IBAnimatable
 
-class HomeNavigationView: UIView {
+class HomeNavigationView: UIView, NibLoadable {
     //MARK:Outlet控件
     @IBOutlet weak var avatarButton: UIButton!
     @IBOutlet weak var searchButton: AnimatableButton!
