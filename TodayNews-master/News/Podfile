@@ -24,7 +24,7 @@ target 'News' do
   #限定库的swift版本
   post_install do |installer|
       installer.pods_project.targets.each do |target|
-          if ['RxCocoa', 'SwiftTheme'].include? target.name
+          if ['RxCocoa', 'SwiftTheme', 'BMPlayer', 'NVActivityIndicatorView'].include? target.name
               target.build_configurations.each do |config|
                   config.build_settings['SWIFT_VERSION'] = '4.0'
               end

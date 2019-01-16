@@ -9,80 +9,48 @@
 import UIKit
 import SVProgressHUD
 import BMPlayer
+import MJRefresh
 
 class HomeTableViewController: UITableViewController {
+    /// 懒加载播放器
+    lazy var player: BMPlayer = BMPlayer(customControlView: VideoPlayerCustomView())
+    /// 标题
+    var newsTitle = HomeNewsTitle()
+    /// 新闻数据
+    var news = [NewsModel]()
+    /// 刷新时间
+    var maxBehotTime: TimeInterval = 0.0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    /// 设置刷新控件
+    func setupRefresh(with category: NewsTitleCategory = .recommend) {
+        // 初始化刷新头部
+        let header = RefreshHeader {
+        }
+        /** 根据拖拽比例自动切换透明度 */
+        header?.isAutomaticallyChangeAlpha = true
+        // 设置上次刷新的时间
+        header?.lastUpdatedTimeLabel.isHidden = true
+        
+        //为tableView设置头部刷新
+        tableView.mj_header = header
+        tableView.mj_header.beginRefreshing()
+        
+        // 初始化底部刷新
+        tableView.mj_footer = RefreshAutoGifFooter(refreshingBlock: {
+//            [weak self] in
+            
+        })
+        tableView.mj_footer.isAutomaticallyChangeAlpha = true
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

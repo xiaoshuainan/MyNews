@@ -26,6 +26,13 @@ extension NibLoadable {
     }
 }
 
+protocol RegisterCellFromNib {}
+
+extension RegisterCellFromNib {
+    static var identifier: String { return "\(self)" }
+    static var nib: UINib? { return UINib(nibName: "\(self)", bundle: nil) }
+}
+
 extension UIColor {
     /*
      convenience:便利，使用convenience修饰的构造函数叫做便利构造函数

@@ -7,7 +7,7 @@
 //  Copyright © 2018年 hrscy. All rights reserved.
 //
 
-
+import UIKit
 
 /// 新闻数据模型（首页新闻数据，视频新闻数据，小视频，微头条）
 struct NewsModel: HandyJSON {

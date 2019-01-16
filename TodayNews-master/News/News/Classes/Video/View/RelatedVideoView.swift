@@ -19,7 +19,7 @@ class RelatedVideoView: UIView {
     private lazy var disposeBag = DisposeBag()
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: .plain)
         tableView.ym_registerCell(cell: RelatedVideoCell.self)
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none

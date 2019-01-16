@@ -6,7 +6,7 @@
 //  Copyright © 2018年 hrscy. All rights reserved.
 //
 
-
+import UIKit
 
 struct RealVideo: HandyJSON {
     var status: Int = 0

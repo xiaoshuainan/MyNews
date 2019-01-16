@@ -74,8 +74,8 @@ extension HomeViewController {
             _ = $0.compactMap({ (newsTitle) -> () in
                 switch newsTitle.category {
                 case .video:            // 视频
-                    let videoTableVC = ViewController()
-                    videoTableVC.bgColor = UIColor.orange
+                    let videoTableVC = VideoTableViewController()
+//                    videoTableVC.bgColor = UIColor.orange
 //                    videoTableVC.newsTitle = newsTitle
 //                    videoTableVC.setupRefresh(with: .video)
                     self.addChild(videoTableVC)

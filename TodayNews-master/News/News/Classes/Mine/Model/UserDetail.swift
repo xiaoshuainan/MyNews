@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 // MARK: 用户详情模型
 struct UserDetail: HandyJSON {

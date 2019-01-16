@@ -14,7 +14,7 @@ protocol NetworkToolProtocol {
     //MARK: ------------------------ 首页 home ---------------------
     //MARK: 顶部新闻标题的数据
     static func loadHomeNewsTitleData(completionHandler: @escaping (_ newsTitles: [HomeNewsTitle]) -> ())
-    
+    //
 }
 
 extension NetworkToolProtocol {

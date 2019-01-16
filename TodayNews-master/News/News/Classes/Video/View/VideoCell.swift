@@ -14,28 +14,7 @@ class VideoCell: UITableViewCell, RegisterCellFromNib {
     /// 视频数据
     var video = NewsModel() {
         didSet {
-            titleLabel.text = video.title
-            playCountLabel.text = video.video_detail_info.videoWatchCount + "次播放"
-            avatarButton.kf.setImage(with: URL(string: video.user_info.avatar_url), for: .normal)
-            vImageView.isHidden = !video.user_info.user_verified
-            concernButton.isSelected = video.user_info.follow
-            bgImageButton.kf.setBackgroundImage(with: URL(string: video.video_detail_info.detail_video_large_image.urlString)!, for: .normal)
-            timeLabel.text = video.videoDuration
-            commentButton.setTitle(video.commentCount, for: .normal)
-            commentButton.theme_setTitleColor("colors.black", forState: .normal)
-            commentButton.theme_setImage("images.comment_24x24_", forState: .normal)
-            concernButton.isHidden = video.label_style == .ad
-            commentButton.isHidden = video.label_style == .ad
-            adButton.setTitle((video.ad_button.button_text == "" ? "查看详情" : video.ad_button.button_text), for: .normal)
-            nameLable.text = video.user_info.name
-            if video.label_style == .ad {
-                nameLable.text = video.app_name != "" ? video.app_name : video.ad_button.app_name
-                descriptionLabel.text = video.ad_button.description == "" ? video.sub_title : video.ad_button.description
-                descriptionLabelHeight.constant = 20
-                layoutIfNeeded()
-            }
-            adButton.isHidden = video.label_style != .ad
-            adLabel.isHidden = video.label_style != .ad
+
         }
     }
     
@@ -98,14 +77,14 @@ class VideoCell: UITableViewCell, RegisterCellFromNib {
     @IBAction func concernButtonClicked(_ sender: UIButton) {
         if sender.isSelected { // 已经关注，点击则取消关注
             // 已关注用户，取消关注
-            NetworkTool.loadRelationUnfollow(userId: video.user_info.user_id, completionHandler: { (_) in
-                sender.isSelected = !sender.isSelected
-            })
+//            NetworkTool.loadRelationUnfollow(userId: video.user_info.user_id, completionHandler: { (_) in
+//                sender.isSelected = !sender.isSelected
+//            })
         } else { // 未关注，点击则关注这个用户
             // 点击关注按钮，关注用户
-            NetworkTool.loadRelationFollow(userId: video.user_info.user_id, completionHandler: { (_) in
-                sender.isSelected = !sender.isSelected
-            })
+//            NetworkTool.loadRelationFollow(userId: video.user_info.user_id, completionHandler: { (_) in
+//                sender.isSelected = !sender.isSelected
+//            })
         }
     }
     
