@@ -16,6 +16,9 @@ target 'MyNews' do
     pod 'SVProgressHUD' # HUD
     pod 'BMPlayer', '~> 1.0.1' #播放器
     pod 'Kingfisher' # 图片缓存框架,类似OC的SDWebImage
+    pod 'SQLite.swift' # 数据库
+    pod 'FDFullscreenPopGesture' # 一个丝滑的全屏滑动返回手势
+    pod 'lottie-ios' # 动画库
 
     #限定库的swift版本
     post_install do |installer|

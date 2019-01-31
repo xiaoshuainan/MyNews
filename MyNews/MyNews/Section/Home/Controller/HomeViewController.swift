@@ -75,9 +75,7 @@ extension HomeViewController {
                 switch newsTitle.category {
                 case .video:            // 视频
                     let videoTableVC = VideoTableViewController()
-//                    videoTableVC.bgColor = UIColor.orange
-//                    videoTableVC.newsTitle = newsTitle
-//                    videoTableVC.setupRefresh(with: .video)
+                    videoTableVC.setupRefresh(with: .video)
                     self.addChild(videoTableVC)
                 case .essayJoke:        // 段子
                     let videoTableVC = ViewController()

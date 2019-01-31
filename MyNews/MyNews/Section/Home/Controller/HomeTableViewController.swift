@@ -24,7 +24,7 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SVProgressHUD.configuration()
     }
     
     /// 设置刷新控件

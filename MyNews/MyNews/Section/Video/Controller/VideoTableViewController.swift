@@ -12,7 +12,6 @@ class VideoTableViewController: HomeTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("123");
         
         tableView.rowHeight = screenWidth * 0.67
     }

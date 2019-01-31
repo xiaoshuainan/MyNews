@@ -203,15 +203,15 @@ extension TransitionAnimationType {
     var caTransitionSubtype: String {
       switch self {
       case .left:
-        return kCATransitionFromLeft
+        return convertFromCATransitionSubtype(CATransitionSubtype.fromLeft)
       case .right:
-        return kCATransitionFromRight
+        return convertFromCATransitionSubtype(CATransitionSubtype.fromRight)
       case .top:
         // The actual transition direction is oposite, need to reverse
-        return kCATransitionFromBottom
+        return convertFromCATransitionSubtype(CATransitionSubtype.fromBottom)
       case .bottom:
         // The actual transition direction is oposite, need to reverse
-        return kCATransitionFromTop
+        return convertFromCATransitionSubtype(CATransitionSubtype.fromTop)
       default:
         return ""
       }
@@ -385,4 +385,9 @@ extension TransitionAnimationType: Hashable {
   public static func == (lhs: TransitionAnimationType, rhs: TransitionAnimationType) -> Bool {
     return lhs.stringValue == rhs.stringValue
   }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromCATransitionSubtype(_ input: CATransitionSubtype) -> String {
+	return input.rawValue
 }

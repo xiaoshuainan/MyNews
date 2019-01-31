@@ -53,8 +53,8 @@ class SystemTransitionAnimator: NSObject, AnimatedTransitioning {
   fileprivate func performSystemTransition(using context: UIViewControllerContextTransitioning) {
     CALayer.animate({
       let transition = CATransition()
-      transition.type = systemTransitionType.rawValue
-      transition.subtype = systemTransitionSubtype
+      transition.type = convertToCATransitionType(systemTransitionType.rawValue)
+      transition.subtype = convertToOptionalCATransitionSubtype(systemTransitionSubtype)
       transition.duration = transitionDuration(using: context)
       transition.timingFunctionType = .easeOutCubic
       context.containerView.layer.add(transition, forKey: kCATransition)
@@ -91,4 +91,15 @@ extension SystemTransitionAnimator: UIViewControllerAnimatedTransitioning {
 
   }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalCATransitionSubtype(_ input: String?) -> CATransitionSubtype? {
+	guard let input = input else { return nil }
+	return CATransitionSubtype(rawValue: input)
 }

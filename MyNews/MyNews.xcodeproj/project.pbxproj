@@ -43,6 +43,7 @@
 		1426ED2321D6311A00E0AC6F /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1426ED2121D6311A00E0AC6F /* default_theme.plist */; };
 		1426ED2421D6311A00E0AC6F /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1426ED2221D6311A00E0AC6F /* night_theme.plist */; };
 		143DDBE121EDD1020057D858 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDBE021EDD1020057D858 /* HomeTableViewController.swift */; };
+		145A9D972202F6F400AEBC84 /* SVProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A9D962202F6F400AEBC84 /* SVProgressHUD+Extension.swift */; };
 		146034C621DD994200AFFD77 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146034C521DD994200AFFD77 /* NetworkTools.swift */; };
 		146034C821DDA13C00AFFD77 /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146034C721DDA13C00AFFD77 /* HomeNewsTitle.swift */; };
 		14605EDA21FE97CB0077C6A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14605ED921FE97CB0077C6A0 /* MineViewController.swift */; };
@@ -115,6 +116,7 @@
 		1426ED2121D6311A00E0AC6F /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		1426ED2221D6311A00E0AC6F /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
 		143DDBE021EDD1020057D858 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		145A9D962202F6F400AEBC84 /* SVProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Extension.swift"; sourceTree = "<group>"; };
 		146034C521DD994200AFFD77 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		146034C721DDA13C00AFFD77 /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
 		14605ED921FE97CB0077C6A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				14203BAE21DCB44E0065B24D /* UIKit+Extension.swift */,
+				145A9D962202F6F400AEBC84 /* SVProgressHUD+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -631,14 +635,17 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -647,9 +654,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -694,6 +703,7 @@
 				1400D00321D22E2B00351731 /* ThemeManager.swift in Sources */,
 				1400CF8421D226A700351731 /* AppDelegate.swift in Sources */,
 				1400D00721D22E2B00351731 /* ThemeManager+Plist.swift in Sources */,
+				145A9D972202F6F400AEBC84 /* SVProgressHUD+Extension.swift in Sources */,
 				1400CFCF21D2274E00351731 /* UIConstant.swift in Sources */,
 				1400D00921D22E2B00351731 /* ThemeImagePicker.swift in Sources */,
 				1467C38221EF1ACF00E47915 /* VideoTableViewController.swift in Sources */,

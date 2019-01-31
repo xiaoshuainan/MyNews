@@ -42,9 +42,9 @@ public extension AnimatedTransitioning {
     containerView.addSubview(toView)
     CALayer.animate({
       let transition = CATransition()
-      transition.type = type.rawValue
+      transition.type = convertToCATransitionType(type.rawValue)
       if let subtype = subtype {
-        transition.subtype = subtype
+        transition.subtype = convertToOptionalCATransitionSubtype(subtype)
       }
       transition.duration = self.transitionDuration(using: transitionContext)
       transition.timingFunctionType = .easeOutCubic
@@ -54,4 +54,15 @@ public extension AnimatedTransitioning {
       transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     })
   }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalCATransitionSubtype(_ input: String?) -> CATransitionSubtype? {
+	guard let input = input else { return nil }
+	return CATransitionSubtype(rawValue: input)
 }
